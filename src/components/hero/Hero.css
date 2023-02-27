@@ -48,3 +48,19 @@
     display: block;
     text-align: center;
 }
+
+/* .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: white;
+    border-style: solid;
+} */
+.section-division-line {
+    width: 70%;
+    border: #E3E3E3;
+    border-style: solid;
+    margin: 5rem auto;
+    opacity: 0.5;
+}
