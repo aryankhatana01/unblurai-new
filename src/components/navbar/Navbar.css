@@ -17,6 +17,17 @@ header {
     padding-left: 3rem;
     padding-right: 3rem;
     align-items: center;
+    /* **************** Made the navbar sticky START*************** */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: rgb(75, 75, 75);
+    border-style: solid;
+    border-width: 0.5px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    /* **************** Made the navbar sticky END*************** */
+
 }
 
 ul {
