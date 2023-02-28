@@ -42,6 +42,12 @@
     font-family: 'Inter';
     font-weight: 700;
     font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.try-btn:hover {
+    background-color: #3B4BCC;
+    cursor: pointer;
 }
 
 .btn-container {
