@@ -25,10 +25,30 @@ ul {
     gap: 6rem;
 }
 
-.tools-dropdown {
+.svg-text-combined {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    cursor: pointer;
+}
+
+.tools-submenu li {
+    display: block;
+}
+
+.tools-submenu {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 8px;
+    /* margin-top: 12px; */
+}
+
+
+.tools-dropdown:hover .tools-submenu{
+    display: block;
 }
 
 .socials {

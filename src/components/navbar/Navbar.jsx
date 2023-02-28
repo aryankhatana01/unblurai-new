@@ -25,10 +25,15 @@ const Navbar = () => {
         <ul>
             <li><a href="/home">Home</a></li>
             <div className="tools-dropdown">
-                <li><a href="/home">Tools</a></li>
-                <svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1.83334C5.94001 1.83334 1.83334 5.94001 1.83334 11C1.83334 16.06 5.94001 20.1667 11 20.1667C16.06 20.1667 20.1667 16.06 20.1667 11C20.1667 5.94001 16.06 1.83334 11 1.83334ZM10.6792 13.4292L8.12168 10.8717C7.82834 10.5783 8.03001 10.0833 8.44251 10.0833H13.5667C13.9792 10.0833 14.1808 10.5783 13.8875 10.8625L11.33 13.42C11.1467 13.6033 10.8533 13.6033 10.6792 13.4292Z" fill="#F8F8F8"/>
-                </svg>
+                <div className="svg-text-combined">
+                    <li><a href="/home">Tools</a></li>
+                    <svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1.83334C5.94001 1.83334 1.83334 5.94001 1.83334 11C1.83334 16.06 5.94001 20.1667 11 20.1667C16.06 20.1667 20.1667 16.06 20.1667 11C20.1667 5.94001 16.06 1.83334 11 1.83334ZM10.6792 13.4292L8.12168 10.8717C7.82834 10.5783 8.03001 10.0833 8.44251 10.0833H13.5667C13.9792 10.0833 14.1808 10.5783 13.8875 10.8625L11.33 13.42C11.1467 13.6033 10.8533 13.6033 10.6792 13.4292Z" fill="#F8F8F8"/>
+                    </svg>
+                </div>
+                <ul className='tools-submenu'>
+                    <li><a href="/home">Upscaler</a></li>
+                </ul>
             </div>
             <div className="socials">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
