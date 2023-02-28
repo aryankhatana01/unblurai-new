@@ -52,7 +52,7 @@ ul {
     z-index: 999;
     display: none;
     background-color: #323232;
-    padding: 10px;
+    padding: 20px 20px 20px 20px;
     border-radius: 8px;
     /* margin-top: 12px; */
 }
