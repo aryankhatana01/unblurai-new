@@ -18,7 +18,18 @@
             transform: scaleX(1);
   }
 }
-  
+
+@keyframes color-change {
+  0% {
+    background-color: rgb(252 229 215);
+  }
+  50% {
+    background-color: rgb(192, 249, 244);
+  }
+  100% {
+    background-color: rgb(188, 249, 224);
+  }
+}
 
 .card {
     background-color: #27272a;
@@ -35,7 +46,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     top: 80%;
-    background-color: rgb(252 229 215);
+    /* background-color: rgb(252 229 215); */
+    animation: color-change 2s ease-in-out infinite alternate;
     color: black;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
