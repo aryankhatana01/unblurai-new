@@ -2,6 +2,7 @@
     background-color: #27272a;
     border-radius: 16px;
     width: 32%;
+    overflow: hidden;  /* hide overflow from video */
 }
 
 .video {
@@ -9,6 +10,11 @@
     height: 100%;
     border-radius: 16px;
     object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .video {
+    transform: scale(2.1);
 }
 
 .card__title {
