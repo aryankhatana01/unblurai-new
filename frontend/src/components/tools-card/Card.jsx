@@ -15,6 +15,9 @@ const Card = (props) => {
                 <p>{props.title}</p>
             </div>
             <p className='card__desc'>{props.desc}</p>
+            <div className="card__btn">
+                {props.btn_txt}
+            </div>
         </a>
     </div>
   )

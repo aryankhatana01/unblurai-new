@@ -1,8 +1,47 @@
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+  
+
 .card {
     background-color: #27272a;
     border-radius: 16px;
     width: 32%;
     overflow: hidden;  /* hide overflow from video */
+    position: relative;
+}
+
+.card__btn {
+    display: none;
+    /* transition: all 0.4s ease-in-out; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    background-color: rgb(252 229 215);
+    color: black;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    border-radius: 40px;
 }
 
 .video {
@@ -15,6 +54,10 @@
 
 .card:hover .video {
     transform: scale(2.1);
+}
+
+.card:hover .card__btn {
+    display: inline-block;
 }
 
 .card__title {
