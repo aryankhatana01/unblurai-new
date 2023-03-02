@@ -1,10 +1,11 @@
 import React from 'react'
 import './Card.css'
+import { Link } from 'react-router-dom'
 
 const Card = (props) => {
   return (
     <div className='card'>
-        <a href="/home">
+        <Link to={props.link}>
             <div className="card__img">
                 <video className='video' muted="" loop="" playsinline="">
                     <source src={props.img} type="video/webm" />
@@ -18,7 +19,7 @@ const Card = (props) => {
             <div className="card__btn">
                 {props.btn_txt}
             </div>
-        </a>
+        </Link>
     </div>
   )
 }
