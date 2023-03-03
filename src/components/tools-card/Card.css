@@ -45,7 +45,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 80%;
+    top: 85%;
     /* background-color: rgb(252 229 215); */
     animation: color-change 2s ease-in-out infinite alternate;
     color: black;
