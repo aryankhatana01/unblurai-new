@@ -32,7 +32,7 @@ const Navbar = () => {
                     </svg>
                 </div>
                 <ul className='tools-submenu'>
-                    <li><a href="/home">Upscaler</a></li>
+                    <li><a href="/upscaler">Upscaler</a></li>
                 </ul>
             </div>
             <div className="socials">
