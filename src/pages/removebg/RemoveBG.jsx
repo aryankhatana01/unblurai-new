@@ -3,7 +3,7 @@ import './RemoveBG.css'
 
 const RemoveBG = () => {
   return (
-    <div className='test'>RemoveBG</div>
+    <div className='test'>RemoveBG Coming Soon...</div>
   )
 }
 

@@ -1,3 +1,8 @@
 .test {
     color: white;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem;
 }

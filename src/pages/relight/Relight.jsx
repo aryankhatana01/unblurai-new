@@ -3,7 +3,7 @@ import './Relight.css'
 
 const Relight = () => {
   return (
-    <div className='test'>Relight</div>
+    <div className='test'>Relight Coming Soon...</div>
   )
 }
 
