@@ -41,6 +41,9 @@ ul {
     gap: 0.5rem;
     align-items: center;
     cursor: pointer;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 700;
 }
 
 .tools-submenu li {
