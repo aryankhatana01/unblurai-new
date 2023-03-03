@@ -1,10 +1,10 @@
 import React from 'react'
 import './Tools.css'
 import Card from '../tools-card/Card'
-import { Routes, Route } from 'react-router-dom'
-import Upscaler from '../../pages/upscaler/Upscaler'
-import RemoveBG from '../../pages/removebg/RemoveBG'
-import Relight from '../../pages/relight/Relight'
+// import { Routes, Route } from 'react-router-dom'
+// import Upscaler from '../../pages/upscaler/Upscaler'
+// import RemoveBG from '../../pages/removebg/RemoveBG'
+// import Relight from '../../pages/relight/Relight'
 
 const Tools = () => {
   return (
@@ -33,11 +33,6 @@ const Tools = () => {
           link="/relight"
         />
       </div>
-      <Routes>
-        <Route path="/upscaler" element={<Upscaler />} />
-        <Route path="/relight" element={<Relight />} />
-        <Route path="/removebg" element={<RemoveBG />} />
-      </Routes>
     </>
   )
 }
