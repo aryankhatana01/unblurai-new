@@ -1,3 +1,39 @@
-.test {
+.container {
     color: white;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #27272a;
+    border-radius: 16px;
+    padding-left: 2rem;
+    margin-top: 3rem;
+}
+
+.top-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Inter';
+    align-items: center;
+    color: #DFDFDF;
+}
+
+.img-upscaler {
+    width: 280px;
+    border-radius: 16px;
+}
+
+.top-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.left {
+    width: 32%;
 }
