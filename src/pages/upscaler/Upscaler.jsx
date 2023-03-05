@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Upscaler.css'
+import UpscaleBtn from './upscaleBtn/UpscaleBtn'
 
-const Upscaler = () => {
+const Upscaler = (props) => {
+  const fileInputRef = useRef(null);
+
+  const handleButtonClick = () => {
+      fileInputRef.current.click();
+  }
+
+  const handleFileChange = (e) => {
+      props.setSelectedFile(e.target.files[0]);
+      console.log(e.target.files[0]);
+  }
+
   return (
     <div className='container'>
       <div className="top-card">
@@ -17,6 +29,14 @@ const Upscaler = () => {
             <source src="https://static.clipdrop.co/web/homepage/tools/Enhance.webm#t=0.1" type="video/webm" />
           </video>
         </div>
+      </div>
+
+      <div className="drag-n-drop" onClick={handleButtonClick}>
+        <input type="file" onChange={handleFileChange} name="file" ref={fileInputRef} style={{display: "none"}}/>
+        Click or Drag & Drop an SD Image
+      </div>
+      <div className="button-upscale">
+        <UpscaleBtn />
       </div>
     </div>
   )

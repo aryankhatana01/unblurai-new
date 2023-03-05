@@ -2,10 +2,6 @@
     color: white;
     width: 70%;
     margin: 0 auto;
-    background-color: #27272a;
-    border-radius: 16px;
-    padding-left: 2rem;
-    margin-top: 3rem;
 }
 
 .top-card-heading {
@@ -32,8 +28,37 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    background-color: #27272a;
+    border-radius: 16px;
+    padding-left: 2rem;
+    margin-top: 3rem;
 }
 
 .left {
     width: 32%;
+}
+
+.drag-n-drop {
+    padding: 5rem;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #6b6b6b;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #27272a;
+    cursor: pointer;
+}
+
+.drag-n-drop:hover {
+    background-color: #424242;
+}
+
+.button-upscale {
+    background-color: #27272a;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 0.7rem;
 }
