@@ -44,10 +44,14 @@ async def predict(filename: str):
     utils.predict_one_image(
         device_type="cuda" if torch.cuda.is_available() else "cpu",
         model_arch_name="rrdbnet_x4",
-        model_weights_path="./pretrained-models/ESRGAN_x4-DFO2K-25393df7.pth.tar",
+        model_weights_path="/Users/0x4ry4n/Desktop/Dev/unblurai-new/pretrained-models/ESRGAN_x4-DFO2K-25393df7.pth.tar",
         inputs_path=in_path,
         output_path=out_path
     )
+    # utils.write_img_after_reading(in_path, out_path)
+    return {
+        "STATUS": "SUCCESS",
+    }
 
 @app.get("/image")
 async def get_image():
