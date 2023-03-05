@@ -19,6 +19,10 @@ __all__ = [
     "Summary", "AverageMeter", "ProgressMeter"
 ]
 
+def write_img_after_reading(inp_path, out_path):
+    img = cv2.imread(inp_path)
+    cv2.imwrite(out_path, img)
+
 
 def load_state_dict(
         model: nn.Module,
