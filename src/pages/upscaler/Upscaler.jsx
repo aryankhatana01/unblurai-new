@@ -1,19 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useState } from 'react'
 import './Upscaler.css'
-import UpscaleBtn from './upscaleBtn/UpscaleBtn'
+import UploadSection from './upload-section/UploadSection'
+import FileContext from './contexts/FileContext';
 
-const Upscaler = (props) => {
-  const fileInputRef = useRef(null);
-
-  const handleButtonClick = () => {
-      fileInputRef.current.click();
-  }
-
-  const handleFileChange = (e) => {
-      props.setSelectedFile(e.target.files[0]);
-      console.log(e.target.files[0]);
-  }
-
+const Upscaler = () => {
+  const [selectedFile, setSelectedFile] = useState(null);
   return (
     <div className='container'>
       <div className="top-card">
@@ -30,14 +21,9 @@ const Upscaler = (props) => {
           </video>
         </div>
       </div>
-
-      <div className="drag-n-drop" onClick={handleButtonClick}>
-        <input type="file" onChange={handleFileChange} name="file" ref={fileInputRef} style={{display: "none"}}/>
-        Click or Drag & Drop an SD Image
-      </div>
-      <div className="button-upscale">
-        <UpscaleBtn />
-      </div>
+      <FileContext.Provider value={selectedFile}>
+        <UploadSection setSelectedFile={setSelectedFile}/>
+      </FileContext.Provider>
     </div>
   )
 }
