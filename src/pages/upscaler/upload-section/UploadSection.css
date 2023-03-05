@@ -15,3 +15,10 @@
 .drag-n-drop:hover {
     background-color: #424242;
 }
+
+.button-upscale {
+    background-color: #27272a;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 0.7rem;
+}
